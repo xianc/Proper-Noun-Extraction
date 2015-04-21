@@ -1,8 +1,7 @@
 Xian Chen
-
 CS477 HW#1
-
 September 10th 2013
+
 
 
 **Purpose**
@@ -11,9 +10,11 @@ The purpose of this experiment is to use regular expressions to extract proper n
 
 
 
+
 **The Motivation**
 
 Proper nouns make up every event, idea, or concept. They are identifiers like logos and carry companies, people, ideas, and so much more. For example, before the majority of the population knew what Edward Snowden did, they knew his name. In the spoken and written language repetition is often used to emphasize something important. Highly recognizable and highly used proper nouns signify importance. Therefore by identifying the proper nouns and the frequency in which they are used in some linguistic context it should be easy to isolate the idea or concept of the highest importance as well as get a general idea of what it is about.
+
 
 
 
@@ -41,6 +42,7 @@ The above expression solved cases like “United States” but it still made err
 [A-Za-z]\s+([A-Z][a-z]+(\s*[A-Z][a-z]+)*
 
 This is the final expression I wrote to find proper nouns. The problem with this regex is that it only extracts proper nouns that appear in the middle of sentences and ignores proper nouns that appear in the beginning. Since the regex is impartial to what it ignores, I will be assuming that the ratios at which the proper nouns appear in comparison to each other with this regex is the same as when the regex is perfect.
+
 
 
 
